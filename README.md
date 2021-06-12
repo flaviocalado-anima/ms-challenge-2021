@@ -1,28 +1,31 @@
-# Teste de Desenvolvimento - Frontend e Backend
+# Desafio Final - Trilha Engenheiro IA Microsoft
 
 Olá! Bom dia, boa tarde ou boa noite!
 
-Este é um desafio criado para testar os seus conhecimentos em Machine Learning e a nossa seleção de uma pessoa Engenheira de Software que irá atuar na role de DEV.
+Este é um desafio criado para testar os seus conhecimentos em Machine Learning e nos serviços cogntivos da Azure.
 
 Leia atentamente todo o conteúdo desse documento antes de começar qualquer execução!
 
 ## Instruções gerais
 
-O desafio consiste em implementar um app de TODO List simples que possua um frontend e um backend para processar e armazenar as operações e dados.
+O desafio consiste em uma série de problemas que envolvem Machine Learning e Inteligência Artificial aplicados ao contexto da educação.
 
-Não definiremos linguagens ou frameworks a serem utilizados, no entanto, o uso de frameworks como Angular, Vue.js e React além de linguagens como Java e C# podem ser um diferencial para avaliar o conhecimento nessas stacks. Fica a seu critério escolher o que se adequa mais ao seu perfil e/ou ao seu conhecimento.
+Você e seu time devem escolher quais problemas desejam solucionar, pode ser um único problema, podem ser vários. Vocês escolhem!
 
-A entrega desse teste deve ser feita através do seu repositório Git pessoal (GitHub, Bitbucket, etc).
+Caso não possuam créditos na Azure, você e sua equipe podem optar por outras ferramentas de aprendizagem de máquina.
 
-Qualquer dúvida que tenha, basta entrar em contato conosco que teremos o maior prazer em te ajudar!
+Cada desafio possui uma pontuação associada. Se a equipe soluciona corretamente o desafio, leva a pontuação dele.
 
-### Critérios para avaliação
-- Quantidade de desafios concluidos
-- 
-- Comunicação entre as aplicações (frontend e backend) deverá ocorrer através do protocolo HTTP com chamadas Rest utilizando o formato JSON
-- Documentação de como executar os projetos no ambiente local
-- Implementação de testes de unidade (diferencial)
-- Aplicações executando em containers Docker / docker-compose (diferencial)
+A entrega desse teste deve ser feita através do seu repositório Git pessoal (GitHub, Bitbucket, etc) de um membro da equipe. Vocês deverão encaminhar o link do repositório através do formulário que será enviado durante a próxima semana.
+
+Os resultados finais das previsões dos desafios deverá estar no arquiv README.md do repositório
+
+Qualquer dúvida que tenha, basta entrar em contato conosco.
+
+## Critérios para avaliação
+- Pontuação obtida pela equipe
+- Quantidade dos desafios concluidos
+- Complexidade dos desafios concluidos
 
 # Realizando a Análise dos Dados do Enem
 
@@ -31,81 +34,63 @@ Vá ao site de microdados do ENEM e baixe o dataset referente ao ano de 2019
  https://download.inep.gov.br/microdados/microdados_enem_2019.zip
 
 
-Escolha os desafios que você deseja executar
 
 
 
-1) Crie um ranking das melhores escolas do Brasil baseada na nota média das provas objetivas
-
- 
+Desafio 1 - (3 pontos) Existe alguma correlação entre as notas das provas objetivas? Comente.
 
 
 
-2) Crie um ranking das melhores escolas do Brasil baseada na nota média das provas objetivas mais a nota de redação.
+## Tarefa
+Quem é bom em matemática, também vai bem em ciências da natureza? 
+Nesse problema, você selecionará os campos da prova objetiva:
 
- 
+NU_NOTA_CN	Nota da prova de Ciências da Natureza
+NU_NOTA_CH	Nota da prova de Ciências Humanas
+NU_NOTA_LC	Nota da prova de Linguagens e Códigos
+NU_NOTA_MT	Nota da prova de Matemática
 
+Você deverá realizar uma análise de regressão para descobrir se é possível prever a nota da prova de Ciências da Natureza caso se saiba a nota de outra.
 
-
-3) Como essa nota varia de acordo com o tamanho das escolas avaliadas. Escolas grandes performam melhor ou pior?
-
- 
-
-
-
-4) Existe alguma correlação entre as notas das provas objetivas? Comente.
-
- 
+## Resultado
+Você deverá mostrar a previsão de uma nota de Ciências da Natureza com base em uma nota da prova de Matemática
 
 
-
-5) Crie um ranking de municípios e estados com melhores médias das provas objetivas do ENEM?
-
- 
+Desafio 2 - (5 pontos) Escolha um estado da federação e clusterize os estudantes do enade com base em suas respostas ao questionário socioeconômico.
 
 
+Material de referência: https://docs.microsoft.com/pt-br/learn/modules/create-clustering-model-azure-machine-learning-designer/
 
-6) Clusterize os alunos do estado de MG com base em suas respostas ao questionário socioeconômico. Explique seus achados
+## Tarefa
+Neste problema, você deverá selecionar alguns campos do questionário sócioeconomico Renda Mensal (Q006), acesso a internet (Q025) e a nota final da redação (NU_NOTA_REDACAO) e agrupar os estudantes
 
- 
+## Resultado
+Você deverá mostrar a previsão do cluster de um estudante com base nos dados de Renda Mensal, acesso a internet e nota final da redação informados
 
 
-
-7) Cruze média das notas das provas objetivas com o grau de desenvolvimento economico do estado (site do IBGE) e comente. 
 
 # Realizando a Análise dos Dados do ENADE
 
 Para este desafio, você deverá ir até o site do INEP e baixar os Microdados do ENADE 2019. Disponível em: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enade
 
-## Desafio 1 - (Iniciante) Clusterizando os dados do ENADE
+## Desafio 3 - (3 pontos) Clusterizando os dados do ENADE
 
 Material de referência: https://docs.microsoft.com/pt-br/learn/modules/create-clustering-model-azure-machine-learning-designer/
 
-### Objetivo
 Entender quais fatores influenciam na nota dos estudantes do ENADE pode oferecer insights sobre os grupos sociais e suas notas.
 
 ### Tarefa
 Neste desafio, você deverá utilizar os algoritmos de clusterização para agrupar os estudantes em torno da sua renda (QE_I08), suas horas de estudo (QE_I23) e sua nota geral (NT_GER).
 
-### Teste
-Após treinar o modelo, você deverá escolher 
+### Resultado
+Você deverá mostrar a previsão do cluster de um estudante com base nos dados de Renda Mensal, suas horas de estudo e sua nota geral
 
+## Desafio 4 - (6 pontos) Criando um preditor de notas no ENADE
 
-## Desafio 2 - (Intermediário) Descobrindo quanto você trabalha por semana
+Será que as notas no ENADE vão aumentar ou diminuir? Acesse os microdados das provas anteriores 2019, 2018, 2017, 2016 e 2015 e faça uma análise de regressão para verificar se a nota geral (NT_GER) tendem a aumentar ou a diminuir nos anos de 2020 e 2021.
 
-A prova do ENADE possui um questionário do estudante no qual se pergunta várias informações 
-
-O campo QE_I10
-	A = Não estou trabalhando.
-	B = Trabalho eventualmente.
-	C = Trabalho até 20 horas semanais.
-	D = Trabalho de 21 a 39 horas semanais.
-	E = Trabalho 40 horas semanais ou mais.
-
-
-
-## Desafio 3 - (Avançado) Criando um preditor de nota
-
+### Resultado
+Você deverá mostrar a previsão das notas do ENADE para os anos de 2020 e 2021
 
 
 # Considerações finais

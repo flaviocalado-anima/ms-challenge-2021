@@ -37,11 +37,11 @@ Vá ao site de microdados do ENEM e baixe o dataset referente ao ano de 2019
 
 
 
-Desafio 1 - (3 pontos) Existe alguma correlação entre as notas das provas objetivas? Comente.
+## Desafio 1 - (3 pontos) Existe alguma correlação entre as notas das provas objetivas? Comente.
 
 
 
-## Tarefa
+### Tarefa
 Quem é bom em matemática, também vai bem em ciências da natureza? 
 Nesse problema, você selecionará os campos da prova objetiva:
 
@@ -52,19 +52,19 @@ NU_NOTA_MT	Nota da prova de Matemática
 
 Você deverá realizar uma análise de regressão para descobrir se é possível prever a nota da prova de Ciências da Natureza caso se saiba a nota de outra.
 
-## Resultado
+### Resultado
 Você deverá mostrar a previsão de uma nota de Ciências da Natureza com base em uma nota da prova de Matemática
 
 
-Desafio 2 - (5 pontos) Escolha um estado da federação e clusterize os estudantes do enade com base em suas respostas ao questionário socioeconômico.
+## Desafio 2 - (5 pontos) Escolha um estado da federação e clusterize os estudantes do enade com base em suas respostas ao questionário socioeconômico.
 
 
 Material de referência: https://docs.microsoft.com/pt-br/learn/modules/create-clustering-model-azure-machine-learning-designer/
 
-## Tarefa
+### Tarefa
 Neste problema, você deverá selecionar alguns campos do questionário sócioeconomico Renda Mensal (Q006), acesso a internet (Q025) e a nota final da redação (NU_NOTA_REDACAO) e agrupar os estudantes
 
-## Resultado
+### Resultado
 Você deverá mostrar a previsão do cluster de um estudante com base nos dados de Renda Mensal, acesso a internet e nota final da redação informados
 
 
